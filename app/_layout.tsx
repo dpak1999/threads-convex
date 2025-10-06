@@ -6,7 +6,7 @@ import {
   DMSans_700Bold,
   useFonts,
 } from "@expo-google-fonts/dm-sans";
-import { Stack } from "expo-router";
+import { Slot } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 
@@ -27,11 +27,7 @@ const InitialLayout = () => {
     }
   }, [fonstLoaded]);
 
-  return (
-    <Stack>
-      <Stack.Screen name="index" />
-    </Stack>
-  );
+  return <Slot />;
 };
 
 export default function RootLayout() {
